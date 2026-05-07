@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FeedbackHub - A modern student feedback system for courses and faculty" />
+  <title>Student Feedback System</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>📘</text></svg>" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-brand">
+      <span class="brand-icon" aria-hidden="true">📘</span>
+      <span class="brand-name">FeedbackHub</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="pages/submit.html">Submit Feedback</a></li>
+      <li><a href="pages/report.html">View Reports</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <h1 id="hero-title">Student Feedback System</h1>
+      <p>Submit feedback for courses and faculty. Your voice shapes better education.</p>
+      <div class="hero-btns">
+        <a href="pages/submit.html" class="btn btn-primary">Submit Feedback</a>
+        <a href="pages/report.html" class="btn btn-outline">View Reports</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-card">
+        <div class="hc-stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+        <p class="hc-text">"Best course I've taken. Clear explanations and great support!"</p>
+        <span class="hc-badge">CS101 — Anonymous</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" aria-labelledby="features-title">
+    <h2 class="section-title" id="features-title">What you can do</h2>
+    <div class="feature-grid">
+      <div class="feature-card" role="article">
+        <div class="fcard-icon" aria-hidden="true">📝</div>
+        <h3>Submit Feedback</h3>
+        <p>Rate your courses and faculty. Add detailed comments. Submit anonymously if you prefer.</p>
+        <a href="pages/submit.html" class="card-link">Go to form →</a>
+      </div>
+      <div class="feature-card" role="article">
+        <div class="fcard-icon" aria-hidden="true">📊</div>
+        <h3>View Reports</h3>
+        <p>Browse all submitted feedback. Filter by course or rating. See rating distribution charts.</p>
+        <a href="pages/report.html" class="card-link">View reports →</a>
+      </div>
+      <div class="feature-card" role="article">
+        <div class="fcard-icon" aria-hidden="true">🔒</div>
+        <h3>Anonymous Option</h3>
+        <p>Toggle anonymous mode before submitting. Your student ID stays hidden — only feedback is stored.</p>
+        <a href="pages/submit.html" class="card-link">Try it →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BANNER -->
+  <section class="stats-banner" aria-labelledby="stats-title">
+    <h2 id="stats-title" class="sr-only">System Statistics</h2>
+    <div class="stat-item" role="region" aria-label="Total feedbacks submitted">
+      <span class="stat-num" id="stat-total">0</span>
+      <span class="stat-lbl">Feedbacks submitted</span>
+    </div>
+    <div class="stat-item" role="region" aria-label="Average rating">
+      <span class="stat-num" id="stat-avg">—</span>
+      <span class="stat-lbl">Average rating</span>
+    </div>
+    <div class="stat-item" role="region" aria-label="Courses rated">
+      <span class="stat-num" id="stat-courses">0</span>
+      <span class="stat-lbl">Courses rated</span>
+    </div>
+    <div class="stat-item" role="region" aria-label="Anonymous entries">
+      <span class="stat-num" id="stat-anon">0</span>
+      <span class="stat-lbl">Anonymous entries</span>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <p>&copy; 2024 FeedbackHub — Student Feedback System. Built for better education.</p>
+  </footer>
+
+  <script src="js/db.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
